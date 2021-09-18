@@ -1,0 +1,10 @@
+python3 -m rasa_core_sdk.endpoint --actions actions
+
+#python3 -m rasa_nlu.train -c nlu_config.yml --data data/nlu.md -o models --fixed_model_name nlu --project current --verbose
+#python3 -m rasa_core.run -d models/dialogue -u models/current/nlu --endpoints endpoints.yml
+python3 dialogue_model.py
+
+python3 ques_api.py
+
+./ngrok authtoken 1THdEQPwCOyAoASugxlqSLIp74V_Uxv63DuYboQMwx462av2
+ngrok 5004

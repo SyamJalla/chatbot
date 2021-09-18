@@ -1,0 +1,27 @@
+{
+    "programming language": [{"Text": "Computer understands only a few special language of its own called Programming Language.The number of words and sentences, that the computer understands is also very  limited. \n To give you more insights \n It has a set of instructions .Using these instructions we can make the computer do any activity. \n Scratch is a computer application  which you can use to give instructions to the computer."}],
+    "program": [{"Text": "Sequence of instructions given to a computer is called a Program."}],
+    "project": [{"Text": "In Scratch application,a program is saved as a Project."}],
+    "scratch interface": [{"Image_Url": ["https://drive.google.com/uc?export=view&id=1SNVLCUpCsBg7WC_M2euQ7tvNiSIASmlX", "https://drive.google.com/uc?export=view&id=14BOt4HZDoh1QX99dFhnPrC7OJvmKRC88"]}],
+    "sprite": [{"Text": "In Scratch each picture like below is saved as a sprite.", "Image_Url": ["https://drive.google.com/uc?export=view&id=1Cg9XdrXOHxJA930Rh1KiM3VoaoJhXHy0"]}, {"Text": "some other sprites are as shown", "Image_Url": ["https://drive.google.com/uc?export=view&id=13t4FMbjZ6vkmk6U3-8m_RdLUyeTjoYXr"]}],
+    "stage": [{"Text": "The area where the  sprite moves is called the stage.Stage is where you see your games and animations come to life.", "Image_Url": ["https://drive.google.com/uc?export=view&id=1C__BJDdBzymjfRJzQgR2sh1QmvNvNHRK"]}],
+    "script": [{"Text": "Script is the set of step wise instructions that you give to the sprite to do a particular task. Script also called Program."}],
+    "script area": [{"Text": "This is the place where you we write the script for the sprite.", "Image_Url": ["https://drive.google.com/uc?export=view&id=1DjbBjJpX9xiXgfLKzPlldjYYkHeCkJeB", "https://drive.google.com/uc?export=view&id=173sU_wxynn7azAFCpSEbmcNiTaAeULIs"]}],
+    "motion block": [{"Text": "Moves the sprite in all direction including forward and backward.", "Image_Url": ["https://drive.google.com/uc?export=view&id=1kzIiITWZmi4KHF08K6QpxLCIzfSs8B6m"]}],
+    "looks block": [{"Text": "Changes the looks of the sprite or the background with costumes. It animates the sprite ,make it say something.", "Image_Url": ["https://drive.google.com/uc?export=view&id=1A3Z7idKQmgNk-TFFBEefbMi8YUfLlboN"]}],
+    "sound block": [{"Text": "This block plays a musical note.It can also change the volume of the sound", "Image_Url": ["https://drive.google.com/uc?export=view&id=1seX1OyF2_ZJpq5IcnCnxhjM-fzDTJ1S_"]}],
+    "pen block": [{"Text": "Makes the sprite draw as it moves.It also changes the colour,shade and the thickness of the pen", "Image_Url": ["https://drive.google.com/uc?export=view&id=17wwkCUSbDk40pB1QNZupL0cSGi0Edi_Q"]}],
+    "block palette": [
+                        {"Text": "This is the area which displays all the instructions related to the selected block", "Image_Url": ["https://drive.google.com/uc?export=view&id=1xScsCRy3RxXHgigB3EhDdk1vIIY3DUgU"]},
+                        {"Text": "If we have selected Motion block,it shows all the instruction related to motion block", "Image_Url": ["https://drive.google.com/uc?export=view&id=1kzIiITWZmi4KHF08K6QpxLCIzfSs8B6m"]},
+                        {"Text": "If we have selected Pen  block,it shows all the instruction related to Pen block", "Image_Url": ["https://drive.google.com/uc?export=view&id=17wwkCUSbDk40pB1QNZupL0cSGi0Edi_Q"]},
+                        {"Text": "If we have selected Looks block,it shows all the instruction related to Looks block", "Image_Url": ["https://drive.google.com/uc?export=view&id=1A3Z7idKQmgNk-TFFBEefbMi8YUfLlboN"]},
+                        {"Text": "If we have selected Sound  block,it shows all the instruction related to Sound block", "Image_Url": ["https://drive.google.com/uc?export=view&id=1seX1OyF2_ZJpq5IcnCnxhjM-fzDTJ1S_"]}
+                    ],
+    "scratch program": [{"Text": "Drag the instruction from the block palette and drop it in the Script Area.", "Image_Url": ["https://drive.google.com/uc?export=view&id=1gndwghm5J6xe2NlL_VvwyyCvb3yUBNCo"]}],
+    "add sprite": [{"Image_Url": ["https://drive.google.com/uc?export=view&id=1WpVGECD4t2nmr5YPjUtN_n460rWn7gyn"]}],
+    "add costume": [{"Image_Url": ["https://drive.google.com/uc?export=view&id=16gtwzS592uJRo5RXkcrl0maOgkavJmik", "https://drive.google.com/uc?export=view&id=1tYEQ42QrE2gaNLTYHJfGFdxYAURs3Ofg", "https://drive.google.com/uc?export=view&id=1zXiQSe_NgAhp1bqqEQjFBX7TrEk9grjg"]}],
+    "use costumes": [{"Text": "Go to the ‘looks’ block. Here you can find the instructions to change the Costumes.", "Image_Url": ["https://drive.google.com/uc?export=view&id=1jEAbHh_onGUv0xMJdYtCrw6g67QzNMCL"]}],
+    "draw square": [{"Image_Url": ["https://drive.google.com/uc?export=view&id=1Nv9F1n75C1tS--u0pf_BbKLksVM88yOT"]}],
+    "draw rectangle": [{"Image_Url": ["https://drive.google.com/uc?export=view&id=1zog9pWmyMAOF8CmczwUrSwWEDToporMA"]}]
+}

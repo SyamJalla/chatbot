@@ -1,0 +1,681 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "greet",
+        "text": "Hi"
+      },
+      {
+        "intent": "greet",
+        "text": "Howdy"
+      },
+      {
+        "intent": "greet",
+        "text": "heya"
+      },
+      {
+        "intent": "greet",
+        "text": "hihi"
+      },
+      {
+        "intent": "greet",
+        "text": "sup"
+      },
+      {
+        "intent": "greet",
+        "text": "what's up"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "I am good, how are you doing?"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "I'm fine, how are you?"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "I'm good, how are you?"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "I am doing great"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "I'm doing great"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "I'm fine"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "I'm good"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 8,
+            "end": 28,
+            "value": "Programming Language",
+            "entity": "category"
+          }
+        ],
+        "text": "what is Programming Language?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 8,
+            "end": 15,
+            "value": "Program",
+            "entity": "category"
+          }
+        ],
+        "text": "what is Program?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 8,
+            "end": 15,
+            "value": "Project",
+            "entity": "category"
+          }
+        ],
+        "text": "what is Project?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 9,
+            "end": 26,
+            "value": "scratch interface",
+            "entity": "category"
+          }
+        ],
+        "text": "whats is scratch interface?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 7,
+            "end": 18,
+            "value": "draw square",
+            "entity": "category"
+          }
+        ],
+        "text": "how to draw square?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 7,
+            "end": 21,
+            "value": "draw rectangle",
+            "entity": "category"
+          }
+        ],
+        "text": "how to draw rectangle?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 8,
+            "end": 14,
+            "value": "Sprite",
+            "entity": "category"
+          }
+        ],
+        "text": "what is Sprite?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 8,
+            "end": 13,
+            "value": "Stage",
+            "entity": "category"
+          }
+        ],
+        "text": "what is Stage?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 8,
+            "end": 14,
+            "value": "Script",
+            "entity": "category"
+          }
+        ],
+        "text": "what is Script?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 8,
+            "end": 19,
+            "value": "Script Area",
+            "entity": "category"
+          }
+        ],
+        "text": "what is Script Area?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 8,
+            "end": 20,
+            "value": "Motion Block",
+            "entity": "category"
+          }
+        ],
+        "text": "what is Motion Block?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 8,
+            "end": 19,
+            "value": "Looks Block",
+            "entity": "category"
+          }
+        ],
+        "text": "what is Looks Block?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 8,
+            "end": 19,
+            "value": "Sound Block",
+            "entity": "category"
+          }
+        ],
+        "text": "what is Sound Block?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 8,
+            "end": 17,
+            "value": "Pen Block",
+            "entity": "category"
+          }
+        ],
+        "text": "what is Pen Block?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 8,
+            "end": 21,
+            "value": "Black Palette",
+            "entity": "category"
+          }
+        ],
+        "text": "what is Black Palette?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 8,
+            "end": 23,
+            "value": "scratch program",
+            "entity": "category"
+          }
+        ],
+        "text": "what is scratch program?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 7,
+            "end": 17,
+            "value": "add Sprite",
+            "entity": "category"
+          }
+        ],
+        "text": "how to add Sprite?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 7,
+            "end": 18,
+            "value": "add Costume",
+            "entity": "category"
+          }
+        ],
+        "text": "how to add Costume?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 7,
+            "end": 19,
+            "value": "use costumes",
+            "entity": "category"
+          }
+        ],
+        "text": "how to use costumes?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 17,
+            "end": 37,
+            "value": "Programming Language",
+            "entity": "category"
+          }
+        ],
+        "text": "what is meant by Programming Language?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 17,
+            "end": 24,
+            "value": "Program",
+            "entity": "category"
+          }
+        ],
+        "text": "what is meant by Program?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 19,
+            "end": 26,
+            "value": "Project",
+            "entity": "category"
+          }
+        ],
+        "text": "what do know about Project?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 19,
+            "end": 26,
+            "value": "Program",
+            "entity": "category"
+          }
+        ],
+        "text": "what do know about Program?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 19,
+            "end": 26,
+            "value": "Project",
+            "entity": "category"
+          }
+        ],
+        "text": "what do know about Project?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 24,
+            "end": 44,
+            "value": "Programming Language",
+            "entity": "category"
+          }
+        ],
+        "text": "Tell me something about Programming Language"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 24,
+            "end": 31,
+            "value": "Program",
+            "entity": "category"
+          }
+        ],
+        "text": "Tell me something about Program"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 24,
+            "end": 31,
+            "value": "Project",
+            "entity": "category"
+          }
+        ],
+        "text": "Tell me something about Project"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 26,
+            "end": 33,
+            "value": "Project",
+            "entity": "category"
+          }
+        ],
+        "text": "What is the defination of Project?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Project",
+            "entity": "category"
+          }
+        ],
+        "text": "Project?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Program",
+            "entity": "category"
+          }
+        ],
+        "text": "Program?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 0,
+            "end": 20,
+            "value": "Programming Language",
+            "entity": "category"
+          }
+        ],
+        "text": "Programming Language?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 0,
+            "end": 17,
+            "value": "scratch interface",
+            "entity": "category"
+          }
+        ],
+        "text": "scratch interface?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Sprite",
+            "entity": "category"
+          }
+        ],
+        "text": "Sprite?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "Stage",
+            "entity": "category"
+          }
+        ],
+        "text": "Stage?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Script",
+            "entity": "category"
+          }
+        ],
+        "text": "Script?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "Script Area",
+            "entity": "category"
+          }
+        ],
+        "text": "Script Area?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "Motion Block",
+            "entity": "category"
+          }
+        ],
+        "text": "Motion Block?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "Looks Block",
+            "entity": "category"
+          }
+        ],
+        "text": "Looks Block?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "Sound Block",
+            "entity": "category"
+          }
+        ],
+        "text": "Sound Block?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "Pen Block",
+            "entity": "category"
+          }
+        ],
+        "text": "Pen Block?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 0,
+            "end": 13,
+            "value": "Black Palette",
+            "entity": "category"
+          }
+        ],
+        "text": "Black Palette?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 0,
+            "end": 15,
+            "value": "scratch program",
+            "entity": "category"
+          }
+        ],
+        "text": "scratch program?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "add sprite",
+            "entity": "category"
+          }
+        ],
+        "text": "add sprite?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "add costume",
+            "entity": "category"
+          }
+        ],
+        "text": "add costume?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "use costumes",
+            "entity": "category"
+          }
+        ],
+        "text": "use costumes?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "draw square",
+            "entity": "category"
+          }
+        ],
+        "text": "draw square?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 0,
+            "end": 14,
+            "value": "draw rectangle",
+            "entity": "category"
+          }
+        ],
+        "text": "draw rectangle?"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thank you"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thanks"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thank you so much"
+      },
+      {
+        "intent": "thanks",
+        "text": "gracious"
+      },
+      {
+        "intent": "thanks",
+        "text": "No, I am good as of now. Bye"
+      },
+      {
+        "intent": "bye",
+        "text": "Bye"
+      },
+      {
+        "intent": "bye",
+        "text": "Bbye"
+      },
+      {
+        "intent": "bye",
+        "text": "goodbye"
+      },
+      {
+        "intent": "bye",
+        "text": "see you later"
+      },
+      {
+        "intent": "bye",
+        "text": "cya"
+      },
+      {
+        "intent": "bye",
+        "text": "ciao"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}

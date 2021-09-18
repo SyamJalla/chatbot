@@ -1,0 +1,2999 @@
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 37 (6 distinct intents)
+	- Found intents: 'fine_ask', 'thanks', 'bye', 'news', 'fine_normal', 'greet'
+	- entity examples: 11 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 37 (6 distinct intents)
+	- Found intents: 'fine_ask', 'thanks', 'bye', 'news', 'fine_normal', 'greet'
+	- entity examples: 11 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 37 examples that have a defined intent out of 37 examples
+INFO:rasa_nlu.test:F1-Score:  0.9358108108108109
+INFO:rasa_nlu.test:Precision: 0.9579579579579579
+INFO:rasa_nlu.test:Accuracy:  0.9459459459459459
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+         bye       0.78      1.00      0.88         7
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       1.00      1.00      1.00         9
+        news       1.00      1.00      1.00        11
+      thanks       1.00      0.33      0.50         3
+
+   micro avg       0.95      0.95      0.95        37
+   macro avg       0.96      0.89      0.90        37
+weighted avg       0.96      0.95      0.94        37
+
+INFO:rasa_nlu.test:Model prediction errors saved to errors.json.
+DEBUG:rasa_nlu.test:
+
+These intent examples could not be classified correctly: 
+[{'text': 'Thanks', 'intent': 'thanks', 'intent_prediction': {'name': 'bye', 'confidence': 0.42099449222912083}}, {'text': 'Thank you so much', 'intent': 'thanks', 'intent_prediction': {'name': 'bye', 'confidence': 0.3761853523272278}}]
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        24
+   no_entity       1.00      1.00      1.00       118
+
+   micro avg       1.00      1.00      1.00       142
+   macro avg       1.00      1.00      1.00       142
+weighted avg       1.00      1.00      1.00       142
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 37 (6 distinct intents)
+	- Found intents: 'bye', 'greet', 'fine_ask', 'thanks', 'news', 'fine_normal'
+	- entity examples: 11 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 37 (6 distinct intents)
+	- Found intents: 'bye', 'greet', 'fine_ask', 'thanks', 'news', 'fine_normal'
+	- entity examples: 11 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 37 examples that have a defined intent out of 37 examples
+INFO:rasa_nlu.test:F1-Score:  0.8855325914149443
+INFO:rasa_nlu.test:Precision: 0.8621621621621621
+INFO:rasa_nlu.test:Accuracy:  0.918918918918919
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+         bye       0.70      1.00      0.82         7
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       1.00      1.00      1.00         9
+        news       1.00      1.00      1.00        11
+      thanks       0.00      0.00      0.00         3
+
+   micro avg       0.92      0.92      0.92        37
+   macro avg       0.78      0.83      0.80        37
+weighted avg       0.86      0.92      0.89        37
+
+INFO:rasa_nlu.test:Model prediction errors saved to errors.json.
+DEBUG:rasa_nlu.test:
+
+These intent examples could not be classified correctly: 
+[{'text': 'Thank you', 'intent': 'thanks', 'intent_prediction': {'name': 'bye', 'confidence': 0.21009832239497753}}, {'text': 'Thanks', 'intent': 'thanks', 'intent_prediction': {'name': 'bye', 'confidence': 0.4582026507360145}}, {'text': 'Thank you so much', 'intent': 'thanks', 'intent_prediction': {'name': 'bye', 'confidence': 0.4035080007619581}}]
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        24
+   no_entity       1.00      1.00      1.00       118
+
+   micro avg       1.00      1.00      1.00       142
+   macro avg       1.00      1.00      1.00       142
+weighted avg       1.00      1.00      1.00       142
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 37 (6 distinct intents)
+	- Found intents: 'fine_normal', 'thanks', 'news', 'bye', 'fine_ask', 'greet'
+	- entity examples: 11 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 37 (6 distinct intents)
+	- Found intents: 'fine_normal', 'thanks', 'news', 'bye', 'fine_ask', 'greet'
+	- entity examples: 11 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 37 examples that have a defined intent out of 37 examples
+INFO:rasa_nlu.test:F1-Score:  0.908819345661451
+INFO:rasa_nlu.test:Precision: 0.9283783783783784
+INFO:rasa_nlu.test:Accuracy:  0.918918918918919
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+         bye       0.75      0.86      0.80         7
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       0.90      1.00      0.95         9
+        news       1.00      1.00      1.00        11
+      thanks       1.00      0.33      0.50         3
+
+   micro avg       0.92      0.92      0.92        37
+   macro avg       0.94      0.87      0.87        37
+weighted avg       0.93      0.92      0.91        37
+
+INFO:rasa_nlu.test:Model prediction errors saved to errors.json.
+DEBUG:rasa_nlu.test:
+
+These intent examples could not be classified correctly: 
+[{'text': 'Thanks', 'intent': 'thanks', 'intent_prediction': {'name': 'bye', 'confidence': 0.39381081158204523}}, {'text': 'Thank you so much', 'intent': 'thanks', 'intent_prediction': {'name': 'bye', 'confidence': 0.3538326702189044}}, {'text': 'Bye', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.40531969472496215}}]
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        24
+   no_entity       1.00      1.00      1.00       118
+
+   micro avg       1.00      1.00      1.00       142
+   macro avg       1.00      1.00      1.00       142
+weighted avg       1.00      1.00      1.00       142
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 37 (6 distinct intents)
+	- Found intents: 'greet', 'bye', 'fine_ask', 'fine_normal', 'news', 'thanks'
+	- entity examples: 11 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 37 (6 distinct intents)
+	- Found intents: 'greet', 'bye', 'fine_ask', 'fine_normal', 'news', 'thanks'
+	- entity examples: 11 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 37 examples that have a defined intent out of 37 examples
+INFO:rasa_nlu.test:F1-Score:  0.8832582582582583
+INFO:rasa_nlu.test:Precision: 0.8552552552552553
+INFO:rasa_nlu.test:Accuracy:  0.918918918918919
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+         bye       0.78      1.00      0.88         7
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       0.80      1.00      0.89         4
+       greet       1.00      1.00      1.00         9
+        news       1.00      1.00      1.00        11
+      thanks       0.00      0.00      0.00         3
+
+   micro avg       0.92      0.92      0.92        37
+   macro avg       0.76      0.83      0.79        37
+weighted avg       0.86      0.92      0.88        37
+
+INFO:rasa_nlu.test:Model prediction errors saved to errors.json.
+DEBUG:rasa_nlu.test:
+
+These intent examples could not be classified correctly: 
+[{'text': 'Thank you', 'intent': 'thanks', 'intent_prediction': {'name': 'fine_normal', 'confidence': 0.20848149375563174}}, {'text': 'Thanks', 'intent': 'thanks', 'intent_prediction': {'name': 'bye', 'confidence': 0.4753673579269425}}, {'text': 'Thank you so much', 'intent': 'thanks', 'intent_prediction': {'name': 'bye', 'confidence': 0.3893643998733664}}]
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        24
+   no_entity       1.00      1.00      1.00       118
+
+   micro avg       1.00      1.00      1.00       142
+   macro avg       1.00      1.00      1.00       142
+weighted avg       1.00      1.00      1.00       142
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 36 (6 distinct intents)
+	- Found intents: 'news', 'bye', 'greet', 'fine_ask', 'thanks', 'fine_normal'
+	- entity examples: 11 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 36 (6 distinct intents)
+	- Found intents: 'news', 'bye', 'greet', 'fine_ask', 'thanks', 'fine_normal'
+	- entity examples: 11 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 36 examples that have a defined intent out of 36 examples
+INFO:rasa_nlu.test:F1-Score:  0.7651515151515151
+INFO:rasa_nlu.test:Precision: 0.7397435897435898
+INFO:rasa_nlu.test:Accuracy:  0.8055555555555556
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+         bye       0.40      0.33      0.36         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       0.69      1.00      0.82         9
+        news       1.00      1.00      1.00        11
+      thanks       0.00      0.00      0.00         3
+
+   micro avg       0.81      0.81      0.81        36
+   macro avg       0.68      0.72      0.70        36
+weighted avg       0.74      0.81      0.77        36
+
+INFO:rasa_nlu.test:Model prediction errors saved to errors.json.
+DEBUG:rasa_nlu.test:
+
+These intent examples could not be classified correctly: 
+[{'text': 'Thank you', 'intent': 'thanks', 'intent_prediction': {'name': 'bye', 'confidence': 0.2754570677200112}}, {'text': 'Thanks', 'intent': 'thanks', 'intent_prediction': {'name': 'bye', 'confidence': 0.4063768544969083}}, {'text': 'Thank you so much', 'intent': 'thanks', 'intent_prediction': {'name': 'bye', 'confidence': 0.3083847043462935}}, {'text': 'Bye', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.41737084013310893}}, {'text': 'goodbye', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.4015923313083161}}, {'text': 'cya', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.36964756402257815}}, {'text': 'ciao', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.3830063812745792}}]
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        24
+   no_entity       1.00      1.00      1.00       108
+
+   micro avg       1.00      1.00      1.00       132
+   macro avg       1.00      1.00      1.00       132
+weighted avg       1.00      1.00      1.00       132
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 58 (6 distinct intents)
+	- Found intents: 'bye', 'greet', 'fine_ask', 'thanks', 'news', 'fine_normal'
+	- entity examples: 31 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 58 (6 distinct intents)
+	- Found intents: 'bye', 'greet', 'fine_ask', 'thanks', 'news', 'fine_normal'
+	- entity examples: 31 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 58 examples that have a defined intent out of 58 examples
+INFO:rasa_nlu.test:F1-Score:  0.8459247648902821
+INFO:rasa_nlu.test:Precision: 0.8459328028293546
+INFO:rasa_nlu.test:Accuracy:  0.8620689655172413
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+         bye       0.25      0.17      0.20         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       0.69      1.00      0.82         9
+        news       1.00      1.00      1.00        31
+      thanks       0.67      0.40      0.50         5
+
+   micro avg       0.86      0.86      0.86        58
+   macro avg       0.77      0.76      0.75        58
+weighted avg       0.85      0.86      0.85        58
+
+INFO:rasa_nlu.test:Model prediction errors saved to errors.json.
+DEBUG:rasa_nlu.test:
+
+These intent examples could not be classified correctly: 
+[{'text': 'Thanks', 'intent': 'thanks', 'intent_prediction': {'name': 'bye', 'confidence': 0.3760503875455089}}, {'text': 'Thank you so much', 'intent': 'thanks', 'intent_prediction': {'name': 'bye', 'confidence': 0.28279319888261134}}, {'text': 'gracious', 'intent': 'thanks', 'intent_prediction': {'name': 'bye', 'confidence': 0.29886675657368295}}, {'text': 'Bye', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.37377237462984503}}, {'text': 'goodbye', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.36599835483811616}}, {'text': 'see you later', 'intent': 'bye', 'intent_prediction': {'name': 'thanks', 'confidence': 0.37307122445713525}}, {'text': 'cya', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.3439679925741811}}, {'text': 'ciao', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.31314877915201494}}]
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        48
+   no_entity       1.00      1.00      1.00       189
+
+   micro avg       1.00      1.00      1.00       237
+   macro avg       1.00      1.00      1.00       237
+weighted avg       1.00      1.00      1.00       237
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 58 (6 distinct intents)
+	- Found intents: 'thanks', 'fine_ask', 'bye', 'fine_normal', 'news', 'greet'
+	- entity examples: 31 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 58 (6 distinct intents)
+	- Found intents: 'thanks', 'fine_ask', 'bye', 'fine_normal', 'news', 'greet'
+	- entity examples: 31 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 58 examples that have a defined intent out of 58 examples
+INFO:rasa_nlu.test:F1-Score:  0.8338557993730407
+INFO:rasa_nlu.test:Precision: 0.8143236074270557
+INFO:rasa_nlu.test:Accuracy:  0.8620689655172413
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+         bye       0.00      0.00      0.00         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       0.69      1.00      0.82         9
+        news       1.00      1.00      1.00        31
+      thanks       0.60      0.60      0.60         5
+
+   micro avg       0.86      0.86      0.86        58
+   macro avg       0.72      0.77      0.74        58
+weighted avg       0.81      0.86      0.83        58
+
+INFO:rasa_nlu.test:Model prediction errors saved to errors.json.
+DEBUG:rasa_nlu.test:
+
+These intent examples could not be classified correctly: 
+[{'text': 'Thanks', 'intent': 'thanks', 'intent_prediction': {'name': 'bye', 'confidence': 0.33688296432787623}}, {'text': 'gracious', 'intent': 'thanks', 'intent_prediction': {'name': 'bye', 'confidence': 0.3159224281094573}}, {'text': 'Bye', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.44061872771205124}}, {'text': 'Bbye', 'intent': 'bye', 'intent_prediction': {'name': 'thanks', 'confidence': 0.3064514224255108}}, {'text': 'goodbye', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.4222054866252443}}, {'text': 'see you later', 'intent': 'bye', 'intent_prediction': {'name': 'thanks', 'confidence': 0.3908024019658494}}, {'text': 'cya', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.3967603512381898}}, {'text': 'ciao', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.3337752751783053}}]
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        48
+   no_entity       1.00      1.00      1.00       189
+
+   micro avg       1.00      1.00      1.00       237
+   macro avg       1.00      1.00      1.00       237
+weighted avg       1.00      1.00      1.00       237
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 59 (6 distinct intents)
+	- Found intents: 'fine_normal', 'fine_ask', 'news', 'bye', 'thanks', 'greet'
+	- entity examples: 32 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 59 (6 distinct intents)
+	- Found intents: 'fine_normal', 'fine_ask', 'news', 'bye', 'thanks', 'greet'
+	- entity examples: 32 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 59 examples that have a defined intent out of 59 examples
+INFO:rasa_nlu.test:F1-Score:  0.9443099273607748
+INFO:rasa_nlu.test:Precision: 0.961864406779661
+INFO:rasa_nlu.test:Accuracy:  0.9491525423728814
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+         bye       1.00      0.50      0.67         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       0.75      1.00      0.86         9
+        news       1.00      1.00      1.00        32
+      thanks       1.00      1.00      1.00         5
+
+   micro avg       0.95      0.95      0.95        59
+   macro avg       0.96      0.92      0.92        59
+weighted avg       0.96      0.95      0.94        59
+
+INFO:rasa_nlu.test:Model prediction errors saved to errors.json.
+DEBUG:rasa_nlu.test:
+
+These intent examples could not be classified correctly: 
+[{'text': 'Bye', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.41152305724539856}}, {'text': 'goodbye', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.40084888278763825}}, {'text': 'cya', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.3741068897951031}}]
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        49
+   no_entity       1.00      1.00      1.00       189
+
+   micro avg       1.00      1.00      1.00       238
+   macro avg       1.00      1.00      1.00       238
+weighted avg       1.00      1.00      1.00       238
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 60 (6 distinct intents)
+	- Found intents: 'greet', 'news', 'fine_ask', 'fine_normal', 'thanks', 'bye'
+	- entity examples: 33 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 60 (6 distinct intents)
+	- Found intents: 'greet', 'news', 'fine_ask', 'fine_normal', 'thanks', 'bye'
+	- entity examples: 33 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 60 examples that have a defined intent out of 60 examples
+INFO:rasa_nlu.test:F1-Score:  0.8040579710144927
+INFO:rasa_nlu.test:Precision: 0.7880952380952381
+INFO:rasa_nlu.test:Accuracy:  0.8333333333333334
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+         bye       0.25      0.17      0.20         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       0.64      1.00      0.78         9
+        news       1.00      1.00      1.00        33
+      thanks       0.00      0.00      0.00         5
+
+   micro avg       0.83      0.83      0.83        60
+   macro avg       0.65      0.69      0.66        60
+weighted avg       0.79      0.83      0.80        60
+
+INFO:rasa_nlu.test:Model prediction errors saved to errors.json.
+DEBUG:rasa_nlu.test:
+
+These intent examples could not be classified correctly: 
+[{'text': 'Thank you', 'intent': 'thanks', 'intent_prediction': {'name': 'bye', 'confidence': 0.23978247169341246}}, {'text': 'Thanks', 'intent': 'thanks', 'intent_prediction': {'name': 'bye', 'confidence': 0.4392865402180619}}, {'text': 'Thank you so much', 'intent': 'thanks', 'intent_prediction': {'name': 'bye', 'confidence': 0.2740200423771738}}, {'text': 'gracious', 'intent': 'thanks', 'intent_prediction': {'name': 'greet', 'confidence': 0.33667086847917405}}, {'text': 'No, I am good as of now. Bye', 'intent': 'thanks', 'intent_prediction': {'name': 'greet', 'confidence': 0.22228261841049535}}, {'text': 'Bye', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.340228479708192}}, {'text': 'Bbye', 'intent': 'bye', 'intent_prediction': {'name': 'thanks', 'confidence': 0.29238643932933}}, {'text': 'goodbye', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.3396408399355003}}, {'text': 'see you later', 'intent': 'bye', 'intent_prediction': {'name': 'thanks', 'confidence': 0.33615212275520895}}, {'text': 'cya', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.31718667248217347}}]
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        50
+   no_entity       1.00      1.00      1.00       189
+
+   micro avg       1.00      1.00      1.00       239
+   macro avg       1.00      1.00      1.00       239
+weighted avg       1.00      1.00      1.00       239
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 60 (6 distinct intents)
+	- Found intents: 'bye', 'news', 'fine_ask', 'thanks', 'greet', 'fine_normal'
+	- entity examples: 33 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 60 (6 distinct intents)
+	- Found intents: 'bye', 'news', 'fine_ask', 'thanks', 'greet', 'fine_normal'
+	- entity examples: 33 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 60 examples that have a defined intent out of 60 examples
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+         bye       1.00      1.00      1.00         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       1.00      1.00      1.00         9
+        news       1.00      1.00      1.00        33
+      thanks       1.00      1.00      1.00         5
+
+   micro avg       1.00      1.00      1.00        60
+   macro avg       1.00      1.00      1.00        60
+weighted avg       1.00      1.00      1.00        60
+
+INFO:rasa_nlu.test:Your model made no errors
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        50
+   no_entity       1.00      1.00      1.00       189
+
+   micro avg       1.00      1.00      1.00       239
+   macro avg       1.00      1.00      1.00       239
+weighted avg       1.00      1.00      1.00       239
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 60 (6 distinct intents)
+	- Found intents: 'bye', 'news', 'thanks', 'fine_ask', 'greet', 'fine_normal'
+	- entity examples: 33 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 60 (6 distinct intents)
+	- Found intents: 'bye', 'news', 'thanks', 'fine_ask', 'greet', 'fine_normal'
+	- entity examples: 33 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 60 examples that have a defined intent out of 60 examples
+INFO:rasa_nlu.test:F1-Score:  0.9452380952380952
+INFO:rasa_nlu.test:Precision: 0.9625
+INFO:rasa_nlu.test:Accuracy:  0.95
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+         bye       1.00      0.50      0.67         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       0.75      1.00      0.86         9
+        news       1.00      1.00      1.00        33
+      thanks       1.00      1.00      1.00         5
+
+   micro avg       0.95      0.95      0.95        60
+   macro avg       0.96      0.92      0.92        60
+weighted avg       0.96      0.95      0.95        60
+
+INFO:rasa_nlu.test:Model prediction errors saved to errors.json.
+DEBUG:rasa_nlu.test:
+
+These intent examples could not be classified correctly: 
+[{'text': 'Bye', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.43708915218388167}}, {'text': 'goodbye', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.4180182562358049}}, {'text': 'cya', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.39649930883383333}}]
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        50
+   no_entity       1.00      1.00      1.00       189
+
+   micro avg       1.00      1.00      1.00       239
+   macro avg       1.00      1.00      1.00       239
+weighted avg       1.00      1.00      1.00       239
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 72 (6 distinct intents)
+	- Found intents: 'fine_ask', 'bye', 'greet', 'thanks', 'news', 'fine_normal'
+	- entity examples: 45 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 72 (6 distinct intents)
+	- Found intents: 'fine_ask', 'bye', 'greet', 'thanks', 'news', 'fine_normal'
+	- entity examples: 45 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 72 examples that have a defined intent out of 72 examples
+INFO:rasa_nlu.test:F1-Score:  0.8881150793650794
+INFO:rasa_nlu.test:Precision: 0.9453125
+INFO:rasa_nlu.test:Accuracy:  0.9027777777777778
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+         bye       1.00      0.17      0.29         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       0.56      1.00      0.72         9
+        news       1.00      1.00      1.00        45
+      thanks       1.00      0.60      0.75         5
+
+   micro avg       0.90      0.90      0.90        72
+   macro avg       0.93      0.79      0.79        72
+weighted avg       0.95      0.90      0.89        72
+
+INFO:rasa_nlu.test:Model prediction errors saved to errors.json.
+DEBUG:rasa_nlu.test:
+
+These intent examples could not be classified correctly: 
+[{'text': 'Thanks', 'intent': 'thanks', 'intent_prediction': {'name': 'greet', 'confidence': 0.34496571109162827}}, {'text': 'gracious', 'intent': 'thanks', 'intent_prediction': {'name': 'greet', 'confidence': 0.33882266623648016}}, {'text': 'Bye', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.3944207696430888}}, {'text': 'Bbye', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.33349550421659685}}, {'text': 'goodbye', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.3879957226271988}}, {'text': 'cya', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.36085837584988006}}, {'text': 'ciao', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.36973325992512984}}]
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        85
+   no_entity       1.00      1.00      1.00       191
+
+   micro avg       1.00      1.00      1.00       276
+   macro avg       1.00      1.00      1.00       276
+weighted avg       1.00      1.00      1.00       276
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+DEBUG:rasa_nlu.extractors.crf_entity_extractor:Inconsistent BILOU tagging found, B- tag, L- tag pair encloses multiple entity classes.i.e. [B-a, I-b, L-a] instead of [B-a, I-a, L-a].
+Assuming B- class is correct.
+DEBUG:rasa_nlu.extractors.crf_entity_extractor:Inconsistent BILOU tagging found, B- tag not closed by L- tag, i.e [B-a, I-a, O] instead of [B-a, L-a, O].
+Assuming last tag is L-
+DEBUG:rasa_nlu.extractors.crf_entity_extractor:Inconsistent BILOU tagging found, B- tag, L- tag pair encloses multiple entity classes.i.e. [B-a, I-b, L-a] instead of [B-a, I-a, L-a].
+Assuming B- class is correct.
+DEBUG:rasa_nlu.extractors.crf_entity_extractor:Inconsistent BILOU tagging found, B- tag not closed by L- tag, i.e [B-a, I-a, O] instead of [B-a, L-a, O].
+Assuming last tag is L-
+DEBUG:rasa_nlu.extractors.crf_entity_extractor:Inconsistent BILOU tagging found, B- tag, L- tag pair encloses multiple entity classes.i.e. [B-a, I-b, L-a] instead of [B-a, I-a, L-a].
+Assuming B- class is correct.
+DEBUG:rasa_nlu.extractors.crf_entity_extractor:Inconsistent BILOU tagging found, B- tag not closed by L- tag, i.e [B-a, I-a, O] instead of [B-a, L-a, O].
+Assuming last tag is L-
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 72 (6 distinct intents)
+	- Found intents: 'bye', 'greet', 'news', 'thanks', 'fine_ask', 'fine_normal'
+	- entity examples: 45 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 72 (6 distinct intents)
+	- Found intents: 'bye', 'greet', 'news', 'thanks', 'fine_ask', 'fine_normal'
+	- entity examples: 45 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 72 examples that have a defined intent out of 72 examples
+INFO:rasa_nlu.test:F1-Score:  0.9696496851102113
+INFO:rasa_nlu.test:Precision: 0.975595238095238
+INFO:rasa_nlu.test:Accuracy:  0.9722222222222222
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+         bye       0.86      1.00      0.92         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       0.90      1.00      0.95         9
+        news       1.00      1.00      1.00        45
+      thanks       1.00      0.60      0.75         5
+
+   micro avg       0.97      0.97      0.97        72
+   macro avg       0.96      0.93      0.94        72
+weighted avg       0.98      0.97      0.97        72
+
+INFO:rasa_nlu.test:Model prediction errors saved to errors.json.
+DEBUG:rasa_nlu.test:
+
+These intent examples could not be classified correctly: 
+[{'text': 'Thanks', 'intent': 'thanks', 'intent_prediction': {'name': 'bye', 'confidence': 0.32888301095194933}}, {'text': 'gracious', 'intent': 'thanks', 'intent_prediction': {'name': 'greet', 'confidence': 0.33208957881474377}}]
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        81
+   no_entity       1.00      1.00      1.00       191
+
+   micro avg       1.00      1.00      1.00       272
+   macro avg       1.00      1.00      1.00       272
+weighted avg       1.00      1.00      1.00       272
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+DEBUG:rasa_nlu.extractors.crf_entity_extractor:Inconsistent BILOU tagging found, B- tag, L- tag pair encloses multiple entity classes.i.e. [B-a, I-b, L-a] instead of [B-a, I-a, L-a].
+Assuming B- class is correct.
+DEBUG:rasa_nlu.extractors.crf_entity_extractor:Inconsistent BILOU tagging found, B- tag not closed by L- tag, i.e [B-a, I-a, O] instead of [B-a, L-a, O].
+Assuming last tag is L-
+DEBUG:rasa_nlu.extractors.crf_entity_extractor:Inconsistent BILOU tagging found, B- tag, L- tag pair encloses multiple entity classes.i.e. [B-a, I-b, L-a] instead of [B-a, I-a, L-a].
+Assuming B- class is correct.
+DEBUG:rasa_nlu.extractors.crf_entity_extractor:Inconsistent BILOU tagging found, B- tag not closed by L- tag, i.e [B-a, I-a, O] instead of [B-a, L-a, O].
+Assuming last tag is L-
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 70 (6 distinct intents)
+	- Found intents: 'fine_ask', 'greet', 'news', 'thanks', 'bye', 'fine_normal'
+	- entity examples: 43 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 70 (6 distinct intents)
+	- Found intents: 'fine_ask', 'greet', 'news', 'thanks', 'bye', 'fine_normal'
+	- entity examples: 43 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 70 examples that have a defined intent out of 70 examples
+INFO:rasa_nlu.test:F1-Score:  0.8107142857142857
+INFO:rasa_nlu.test:Precision: 0.7914285714285714
+INFO:rasa_nlu.test:Accuracy:  0.8428571428571429
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+         bye       0.00      0.00      0.00         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       0.60      1.00      0.75         9
+        news       1.00      1.00      1.00        43
+      thanks       0.00      0.00      0.00         5
+
+   micro avg       0.84      0.84      0.84        70
+   macro avg       0.60      0.67      0.62        70
+weighted avg       0.79      0.84      0.81        70
+
+INFO:rasa_nlu.test:Model prediction errors saved to errors.json.
+DEBUG:rasa_nlu.test:
+
+These intent examples could not be classified correctly: 
+[{'text': 'Thank you', 'intent': 'thanks', 'intent_prediction': {'name': 'bye', 'confidence': 0.2807087375778439}}, {'text': 'Thanks', 'intent': 'thanks', 'intent_prediction': {'name': 'bye', 'confidence': 0.3998835338918566}}, {'text': 'Thank you so much', 'intent': 'thanks', 'intent_prediction': {'name': 'bye', 'confidence': 0.312456451482318}}, {'text': 'gracious', 'intent': 'thanks', 'intent_prediction': {'name': 'greet', 'confidence': 0.3606708380577269}}, {'text': 'No, I am good as of now. Bye', 'intent': 'thanks', 'intent_prediction': {'name': 'bye', 'confidence': 0.2314246018635387}}, {'text': 'Bye', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.36110147403420534}}, {'text': 'Bbye', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.31212463952522523}}, {'text': 'goodbye', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.35786306772544585}}, {'text': 'see you later', 'intent': 'bye', 'intent_prediction': {'name': 'thanks', 'confidence': 0.32228404836405894}}, {'text': 'cya', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.33367928541369385}}, {'text': 'ciao', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.36225016428661994}}]
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        69
+   no_entity       1.00      1.00      1.00       187
+
+   micro avg       1.00      1.00      1.00       256
+   macro avg       1.00      1.00      1.00       256
+weighted avg       1.00      1.00      1.00       256
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 74 (6 distinct intents)
+	- Found intents: 'news', 'bye', 'thanks', 'fine_normal', 'fine_ask', 'greet'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en_core_web_md'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 74 (6 distinct intents)
+	- Found intents: 'news', 'bye', 'thanks', 'fine_normal', 'fine_ask', 'greet'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 74 examples that have a defined intent out of 74 examples
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+         bye       1.00      1.00      1.00         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       1.00      1.00      1.00         9
+        news       1.00      1.00      1.00        47
+      thanks       1.00      1.00      1.00         5
+
+   micro avg       1.00      1.00      1.00        74
+   macro avg       1.00      1.00      1.00        74
+weighted avg       1.00      1.00      1.00        74
+
+INFO:rasa_nlu.test:Your model made no errors
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        77
+   no_entity       1.00      1.00      1.00       196
+
+   micro avg       1.00      1.00      1.00       273
+   macro avg       1.00      1.00      1.00       273
+weighted avg       1.00      1.00      1.00       273
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 76 (7 distinct intents)
+	- Found intents: 'greet', 'fine_ask', 'bye', 'news', 'Test', 'thanks', 'fine_normal'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en_core_web_md'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 76 (7 distinct intents)
+	- Found intents: 'greet', 'fine_ask', 'bye', 'news', 'Test', 'thanks', 'fine_normal'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 76 examples that have a defined intent out of 76 examples
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+        Test       1.00      1.00      1.00         2
+         bye       1.00      1.00      1.00         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       1.00      1.00      1.00         9
+        news       1.00      1.00      1.00        47
+      thanks       1.00      1.00      1.00         5
+
+   micro avg       1.00      1.00      1.00        76
+   macro avg       1.00      1.00      1.00        76
+weighted avg       1.00      1.00      1.00        76
+
+INFO:rasa_nlu.test:Your model made no errors
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        77
+   no_entity       1.00      1.00      1.00       202
+
+   micro avg       1.00      1.00      1.00       279
+   macro avg       1.00      1.00      1.00       279
+weighted avg       1.00      1.00      1.00       279
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 76 (7 distinct intents)
+	- Found intents: 'greet', 'fine_normal', 'fine_ask', 'Test', 'bye', 'news', 'thanks'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en_core_web_md'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 76 (7 distinct intents)
+	- Found intents: 'greet', 'fine_normal', 'fine_ask', 'Test', 'bye', 'news', 'thanks'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 76 examples that have a defined intent out of 76 examples
+INFO:rasa_nlu.test:F1-Score:  0.9861244019138757
+INFO:rasa_nlu.test:Precision: 0.9890350877192983
+INFO:rasa_nlu.test:Accuracy:  0.9868421052631579
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+        Test       1.00      1.00      1.00         2
+         bye       1.00      1.00      1.00         6
+    fine_ask       1.00      0.67      0.80         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       1.00      1.00      1.00         9
+        news       1.00      1.00      1.00        47
+      thanks       0.83      1.00      0.91         5
+
+   micro avg       0.99      0.99      0.99        76
+   macro avg       0.98      0.95      0.96        76
+weighted avg       0.99      0.99      0.99        76
+
+INFO:rasa_nlu.test:Model prediction errors saved to errors.json.
+DEBUG:rasa_nlu.test:
+
+These intent examples could not be classified correctly: 
+[{'text': 'I am good, how are you doing?', 'intent': 'fine_ask', 'intent_prediction': {'name': 'thanks', 'confidence': 0.25278702084040927}}]
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        77
+   no_entity       1.00      1.00      1.00       202
+
+   micro avg       1.00      1.00      1.00       279
+   macro avg       1.00      1.00      1.00       279
+weighted avg       1.00      1.00      1.00       279
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 76 (7 distinct intents)
+	- Found intents: 'fine_normal', 'bye', 'thanks', 'fine_ask', 'greet', 'news', 'Test'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en_core_web_md'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 76 (7 distinct intents)
+	- Found intents: 'fine_normal', 'bye', 'thanks', 'fine_ask', 'greet', 'news', 'Test'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 76 examples that have a defined intent out of 76 examples
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+        Test       1.00      1.00      1.00         2
+         bye       1.00      1.00      1.00         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       1.00      1.00      1.00         9
+        news       1.00      1.00      1.00        47
+      thanks       1.00      1.00      1.00         5
+
+   micro avg       1.00      1.00      1.00        76
+   macro avg       1.00      1.00      1.00        76
+weighted avg       1.00      1.00      1.00        76
+
+INFO:rasa_nlu.test:Your model made no errors
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        77
+   no_entity       1.00      1.00      1.00       202
+
+   micro avg       1.00      1.00      1.00       279
+   macro avg       1.00      1.00      1.00       279
+weighted avg       1.00      1.00      1.00       279
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 76 (7 distinct intents)
+	- Found intents: 'greet', 'news', 'fine_normal', 'Test', 'bye', 'thanks', 'fine_ask'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en_core_web_md'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 76 (7 distinct intents)
+	- Found intents: 'greet', 'news', 'fine_normal', 'Test', 'bye', 'thanks', 'fine_ask'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 76 examples that have a defined intent out of 76 examples
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+        Test       1.00      1.00      1.00         2
+         bye       1.00      1.00      1.00         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       1.00      1.00      1.00         9
+        news       1.00      1.00      1.00        47
+      thanks       1.00      1.00      1.00         5
+
+   micro avg       1.00      1.00      1.00        76
+   macro avg       1.00      1.00      1.00        76
+weighted avg       1.00      1.00      1.00        76
+
+INFO:rasa_nlu.test:Your model made no errors
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        77
+   no_entity       1.00      1.00      1.00       202
+
+   micro avg       1.00      1.00      1.00       279
+   macro avg       1.00      1.00      1.00       279
+weighted avg       1.00      1.00      1.00       279
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 76 (7 distinct intents)
+	- Found intents: 'greet', 'news', 'fine_normal', 'thanks', 'fine_ask', 'bye', 'Test'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en_core_web_md'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 76 (7 distinct intents)
+	- Found intents: 'greet', 'news', 'fine_normal', 'thanks', 'fine_ask', 'bye', 'Test'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 76 examples that have a defined intent out of 76 examples
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+        Test       1.00      1.00      1.00         2
+         bye       1.00      1.00      1.00         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       1.00      1.00      1.00         9
+        news       1.00      1.00      1.00        47
+      thanks       1.00      1.00      1.00         5
+
+   micro avg       1.00      1.00      1.00        76
+   macro avg       1.00      1.00      1.00        76
+weighted avg       1.00      1.00      1.00        76
+
+INFO:rasa_nlu.test:Your model made no errors
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        77
+   no_entity       1.00      1.00      1.00       202
+
+   micro avg       1.00      1.00      1.00       279
+   macro avg       1.00      1.00      1.00       279
+weighted avg       1.00      1.00      1.00       279
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 76 (7 distinct intents)
+	- Found intents: 'bye', 'fine_ask', 'Test', 'fine_normal', 'news', 'thanks', 'greet'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en_core_web_md'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 76 (7 distinct intents)
+	- Found intents: 'bye', 'fine_ask', 'Test', 'fine_normal', 'news', 'thanks', 'greet'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 76 examples that have a defined intent out of 76 examples
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+        Test       1.00      1.00      1.00         2
+         bye       1.00      1.00      1.00         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       1.00      1.00      1.00         9
+        news       1.00      1.00      1.00        47
+      thanks       1.00      1.00      1.00         5
+
+   micro avg       1.00      1.00      1.00        76
+   macro avg       1.00      1.00      1.00        76
+weighted avg       1.00      1.00      1.00        76
+
+INFO:rasa_nlu.test:Your model made no errors
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        77
+   no_entity       1.00      1.00      1.00       202
+
+   micro avg       1.00      1.00      1.00       279
+   macro avg       1.00      1.00      1.00       279
+weighted avg       1.00      1.00      1.00       279
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 76 (7 distinct intents)
+	- Found intents: 'fine_normal', 'bye', 'thanks', 'greet', 'fine_ask', 'news', 'Test'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en_core_web_md'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 76 (7 distinct intents)
+	- Found intents: 'fine_normal', 'bye', 'thanks', 'greet', 'fine_ask', 'news', 'Test'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 76 examples that have a defined intent out of 76 examples
+INFO:rasa_nlu.test:F1-Score:  0.9389952153110047
+INFO:rasa_nlu.test:Precision: 0.9635627530364372
+INFO:rasa_nlu.test:Accuracy:  0.9473684210526315
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+        Test       1.00      1.00      1.00         2
+         bye       1.00      0.33      0.50         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       0.69      1.00      0.82         9
+        news       1.00      1.00      1.00        47
+      thanks       1.00      1.00      1.00         5
+
+   micro avg       0.95      0.95      0.95        76
+   macro avg       0.96      0.90      0.90        76
+weighted avg       0.96      0.95      0.94        76
+
+INFO:rasa_nlu.test:Model prediction errors saved to errors.json.
+DEBUG:rasa_nlu.test:
+
+These intent examples could not be classified correctly: 
+[{'text': 'Bye', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.4838925160335051}}, {'text': 'goodbye', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.48714323484501154}}, {'text': 'cya', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.47512737926997695}}, {'text': 'ciao', 'intent': 'bye', 'intent_prediction': {'name': 'greet', 'confidence': 0.3755726227926724}}]
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        77
+   no_entity       1.00      1.00      1.00       202
+
+   micro avg       1.00      1.00      1.00       279
+   macro avg       1.00      1.00      1.00       279
+weighted avg       1.00      1.00      1.00       279
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 76 (7 distinct intents)
+	- Found intents: 'fine_ask', 'fine_normal', 'Test', 'bye', 'thanks', 'greet', 'news'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en_core_web_md'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 76 (7 distinct intents)
+	- Found intents: 'fine_ask', 'fine_normal', 'Test', 'bye', 'thanks', 'greet', 'news'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 76 examples that have a defined intent out of 76 examples
+INFO:rasa_nlu.test:F1-Score:  0.9613786490517792
+INFO:rasa_nlu.test:Precision: 0.9505639097744359
+INFO:rasa_nlu.test:Accuracy:  0.9736842105263158
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+        Test       0.00      0.00      0.00         2
+         bye       0.86      1.00      0.92         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       0.90      1.00      0.95         9
+        news       1.00      1.00      1.00        47
+      thanks       1.00      1.00      1.00         5
+
+   micro avg       0.97      0.97      0.97        76
+   macro avg       0.82      0.86      0.84        76
+weighted avg       0.95      0.97      0.96        76
+
+INFO:rasa_nlu.test:Model prediction errors saved to errors.json.
+DEBUG:rasa_nlu.test:
+
+These intent examples could not be classified correctly: 
+[{'text': 'Test me', 'intent': 'Test', 'intent_prediction': {'name': 'greet', 'confidence': 0.20684838167867095}}, {'text': 'Can you test me', 'intent': 'Test', 'intent_prediction': {'name': 'bye', 'confidence': 0.22793700985085724}}]
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        77
+   no_entity       1.00      1.00      1.00       202
+
+   micro avg       1.00      1.00      1.00       279
+   macro avg       1.00      1.00      1.00       279
+weighted avg       1.00      1.00      1.00       279
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 74 (6 distinct intents)
+	- Found intents: 'news', 'fine_normal', 'fine_ask', 'bye', 'greet', 'thanks'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en_core_web_md'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 74 (6 distinct intents)
+	- Found intents: 'news', 'fine_normal', 'fine_ask', 'bye', 'greet', 'thanks'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 74 examples that have a defined intent out of 74 examples
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+         bye       1.00      1.00      1.00         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       1.00      1.00      1.00         9
+        news       1.00      1.00      1.00        47
+      thanks       1.00      1.00      1.00         5
+
+   micro avg       1.00      1.00      1.00        74
+   macro avg       1.00      1.00      1.00        74
+weighted avg       1.00      1.00      1.00        74
+
+INFO:rasa_nlu.test:Your model made no errors
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        77
+   no_entity       1.00      1.00      1.00       196
+
+   micro avg       1.00      1.00      1.00       273
+   macro avg       1.00      1.00      1.00       273
+weighted avg       1.00      1.00      1.00       273
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 74 (6 distinct intents)
+	- Found intents: 'bye', 'fine_normal', 'greet', 'fine_ask', 'news', 'thanks'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en_core_web_md'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 74 (6 distinct intents)
+	- Found intents: 'bye', 'fine_normal', 'greet', 'fine_ask', 'news', 'thanks'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 74 examples that have a defined intent out of 74 examples
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+         bye       1.00      1.00      1.00         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       1.00      1.00      1.00         9
+        news       1.00      1.00      1.00        47
+      thanks       1.00      1.00      1.00         5
+
+   micro avg       1.00      1.00      1.00        74
+   macro avg       1.00      1.00      1.00        74
+weighted avg       1.00      1.00      1.00        74
+
+INFO:rasa_nlu.test:Your model made no errors
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        77
+   no_entity       1.00      1.00      1.00       196
+
+   micro avg       1.00      1.00      1.00       273
+   macro avg       1.00      1.00      1.00       273
+weighted avg       1.00      1.00      1.00       273
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 74 (6 distinct intents)
+	- Found intents: 'fine_normal', 'thanks', 'bye', 'fine_ask', 'greet', 'news'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en_core_web_md'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 74 (6 distinct intents)
+	- Found intents: 'fine_normal', 'thanks', 'bye', 'fine_ask', 'greet', 'news'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 74 examples that have a defined intent out of 74 examples
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+         bye       1.00      1.00      1.00         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       1.00      1.00      1.00         9
+        news       1.00      1.00      1.00        47
+      thanks       1.00      1.00      1.00         5
+
+   micro avg       1.00      1.00      1.00        74
+   macro avg       1.00      1.00      1.00        74
+weighted avg       1.00      1.00      1.00        74
+
+INFO:rasa_nlu.test:Your model made no errors
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        77
+   no_entity       1.00      1.00      1.00       196
+
+   micro avg       1.00      1.00      1.00       273
+   macro avg       1.00      1.00      1.00       273
+weighted avg       1.00      1.00      1.00       273
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 74 (6 distinct intents)
+	- Found intents: 'news', 'bye', 'fine_ask', 'fine_normal', 'thanks', 'greet'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en_core_web_md'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 74 (6 distinct intents)
+	- Found intents: 'news', 'bye', 'fine_ask', 'fine_normal', 'thanks', 'greet'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 74 examples that have a defined intent out of 74 examples
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+         bye       1.00      1.00      1.00         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       1.00      1.00      1.00         9
+        news       1.00      1.00      1.00        47
+      thanks       1.00      1.00      1.00         5
+
+   micro avg       1.00      1.00      1.00        74
+   macro avg       1.00      1.00      1.00        74
+weighted avg       1.00      1.00      1.00        74
+
+INFO:rasa_nlu.test:Your model made no errors
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        77
+   no_entity       1.00      1.00      1.00       196
+
+   micro avg       1.00      1.00      1.00       273
+   macro avg       1.00      1.00      1.00       273
+weighted avg       1.00      1.00      1.00       273
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 74 (6 distinct intents)
+	- Found intents: 'greet', 'fine_normal', 'fine_ask', 'news', 'thanks', 'bye'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en_core_web_md'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 74 (6 distinct intents)
+	- Found intents: 'greet', 'fine_normal', 'fine_ask', 'news', 'thanks', 'bye'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 74 examples that have a defined intent out of 74 examples
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+         bye       1.00      1.00      1.00         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       1.00      1.00      1.00         9
+        news       1.00      1.00      1.00        47
+      thanks       1.00      1.00      1.00         5
+
+   micro avg       1.00      1.00      1.00        74
+   macro avg       1.00      1.00      1.00        74
+weighted avg       1.00      1.00      1.00        74
+
+INFO:rasa_nlu.test:Your model made no errors
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        77
+   no_entity       1.00      1.00      1.00       196
+
+   micro avg       1.00      1.00      1.00       273
+   macro avg       1.00      1.00      1.00       273
+weighted avg       1.00      1.00      1.00       273
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 78 (7 distinct intents)
+	- Found intents: 'Test', 'bye', 'fine_ask', 'thanks', 'news', 'fine_normal', 'greet'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en_core_web_md'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 78 (7 distinct intents)
+	- Found intents: 'Test', 'bye', 'fine_ask', 'thanks', 'news', 'fine_normal', 'greet'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 78 examples that have a defined intent out of 78 examples
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+        Test       1.00      1.00      1.00         4
+         bye       1.00      1.00      1.00         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       1.00      1.00      1.00         9
+        news       1.00      1.00      1.00        47
+      thanks       1.00      1.00      1.00         5
+
+   micro avg       1.00      1.00      1.00        78
+   macro avg       1.00      1.00      1.00        78
+weighted avg       1.00      1.00      1.00        78
+
+INFO:rasa_nlu.test:Your model made no errors
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        77
+   no_entity       1.00      1.00      1.00       202
+
+   micro avg       1.00      1.00      1.00       279
+   macro avg       1.00      1.00      1.00       279
+weighted avg       1.00      1.00      1.00       279
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 78 (7 distinct intents)
+	- Found intents: 'fine_ask', 'greet', 'fine_normal', 'news', 'thanks', 'Test', 'bye'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en_core_web_md'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 78 (7 distinct intents)
+	- Found intents: 'fine_ask', 'greet', 'fine_normal', 'news', 'thanks', 'Test', 'bye'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 78 examples that have a defined intent out of 78 examples
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+        Test       1.00      1.00      1.00         4
+         bye       1.00      1.00      1.00         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       1.00      1.00      1.00         9
+        news       1.00      1.00      1.00        47
+      thanks       1.00      1.00      1.00         5
+
+   micro avg       1.00      1.00      1.00        78
+   macro avg       1.00      1.00      1.00        78
+weighted avg       1.00      1.00      1.00        78
+
+INFO:rasa_nlu.test:Your model made no errors
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        77
+   no_entity       1.00      1.00      1.00       202
+
+   micro avg       1.00      1.00      1.00       279
+   macro avg       1.00      1.00      1.00       279
+weighted avg       1.00      1.00      1.00       279
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 78 (7 distinct intents)
+	- Found intents: 'news', 'greet', 'fine_ask', 'bye', 'Test', 'fine_normal', 'thanks'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en_core_web_md'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 78 (7 distinct intents)
+	- Found intents: 'news', 'greet', 'fine_ask', 'bye', 'Test', 'fine_normal', 'thanks'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 78 examples that have a defined intent out of 78 examples
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+        Test       1.00      1.00      1.00         4
+         bye       1.00      1.00      1.00         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       1.00      1.00      1.00         9
+        news       1.00      1.00      1.00        47
+      thanks       1.00      1.00      1.00         5
+
+   micro avg       1.00      1.00      1.00        78
+   macro avg       1.00      1.00      1.00        78
+weighted avg       1.00      1.00      1.00        78
+
+INFO:rasa_nlu.test:Your model made no errors
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        77
+   no_entity       1.00      1.00      1.00       202
+
+   micro avg       1.00      1.00      1.00       279
+   macro avg       1.00      1.00      1.00       279
+weighted avg       1.00      1.00      1.00       279
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 78 (7 distinct intents)
+	- Found intents: 'thanks', 'fine_ask', 'bye', 'fine_normal', 'greet', 'news', 'Test'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en_core_web_md'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 78 (7 distinct intents)
+	- Found intents: 'thanks', 'fine_ask', 'bye', 'fine_normal', 'greet', 'news', 'Test'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 78 examples that have a defined intent out of 78 examples
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+        Test       1.00      1.00      1.00         4
+         bye       1.00      1.00      1.00         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       1.00      1.00      1.00         9
+        news       1.00      1.00      1.00        47
+      thanks       1.00      1.00      1.00         5
+
+   micro avg       1.00      1.00      1.00        78
+   macro avg       1.00      1.00      1.00        78
+weighted avg       1.00      1.00      1.00        78
+
+INFO:rasa_nlu.test:Your model made no errors
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        77
+   no_entity       1.00      1.00      1.00       202
+
+   micro avg       1.00      1.00      1.00       279
+   macro avg       1.00      1.00      1.00       279
+weighted avg       1.00      1.00      1.00       279
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 78 (7 distinct intents)
+	- Found intents: 'greet', 'bye', 'fine_normal', 'fine_ask', 'Test', 'thanks', 'news'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en_core_web_md'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 78 (7 distinct intents)
+	- Found intents: 'greet', 'bye', 'fine_normal', 'fine_ask', 'Test', 'thanks', 'news'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 78 examples that have a defined intent out of 78 examples
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+        Test       1.00      1.00      1.00         4
+         bye       1.00      1.00      1.00         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       1.00      1.00      1.00         9
+        news       1.00      1.00      1.00        47
+      thanks       1.00      1.00      1.00         5
+
+   micro avg       1.00      1.00      1.00        78
+   macro avg       1.00      1.00      1.00        78
+weighted avg       1.00      1.00      1.00        78
+
+INFO:rasa_nlu.test:Your model made no errors
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        77
+   no_entity       1.00      1.00      1.00       202
+
+   micro avg       1.00      1.00      1.00       279
+   macro avg       1.00      1.00      1.00       279
+weighted avg       1.00      1.00      1.00       279
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 78 (7 distinct intents)
+	- Found intents: 'thanks', 'fine_ask', 'Test', 'fine_normal', 'bye', 'news', 'greet'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en_core_web_md'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 78 (7 distinct intents)
+	- Found intents: 'thanks', 'fine_ask', 'Test', 'fine_normal', 'bye', 'news', 'greet'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 78 examples that have a defined intent out of 78 examples
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+        Test       1.00      1.00      1.00         4
+         bye       1.00      1.00      1.00         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       1.00      1.00      1.00         9
+        news       1.00      1.00      1.00        47
+      thanks       1.00      1.00      1.00         5
+
+   micro avg       1.00      1.00      1.00        78
+   macro avg       1.00      1.00      1.00        78
+weighted avg       1.00      1.00      1.00        78
+
+INFO:rasa_nlu.test:Your model made no errors
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        77
+   no_entity       1.00      1.00      1.00       202
+
+   micro avg       1.00      1.00      1.00       279
+   macro avg       1.00      1.00      1.00       279
+weighted avg       1.00      1.00      1.00       279
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 78 (7 distinct intents)
+	- Found intents: 'greet', 'Test', 'bye', 'news', 'thanks', 'fine_ask', 'fine_normal'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en_core_web_md'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 78 (7 distinct intents)
+	- Found intents: 'greet', 'Test', 'bye', 'news', 'thanks', 'fine_ask', 'fine_normal'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 78 examples that have a defined intent out of 78 examples
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+        Test       1.00      1.00      1.00         4
+         bye       1.00      1.00      1.00         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       1.00      1.00      1.00         9
+        news       1.00      1.00      1.00        47
+      thanks       1.00      1.00      1.00         5
+
+   micro avg       1.00      1.00      1.00        78
+   macro avg       1.00      1.00      1.00        78
+weighted avg       1.00      1.00      1.00        78
+
+INFO:rasa_nlu.test:Your model made no errors
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        77
+   no_entity       1.00      1.00      1.00       202
+
+   micro avg       1.00      1.00      1.00       279
+   macro avg       1.00      1.00      1.00       279
+weighted avg       1.00      1.00      1.00       279
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 78 (7 distinct intents)
+	- Found intents: 'news', 'bye', 'fine_normal', 'Test', 'greet', 'thanks', 'fine_ask'
+	- entity examples: 51 (2 distinct entities)
+	- found entities: 'answer', 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en_core_web_md'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 78 (7 distinct intents)
+	- Found intents: 'news', 'bye', 'fine_normal', 'Test', 'greet', 'thanks', 'fine_ask'
+	- entity examples: 51 (2 distinct entities)
+	- found entities: 'answer', 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 78 examples that have a defined intent out of 78 examples
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+        Test       1.00      1.00      1.00         4
+         bye       1.00      1.00      1.00         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       1.00      1.00      1.00         9
+        news       1.00      1.00      1.00        47
+      thanks       1.00      1.00      1.00         5
+
+   micro avg       1.00      1.00      1.00        78
+   macro avg       1.00      1.00      1.00        78
+weighted avg       1.00      1.00      1.00        78
+
+INFO:rasa_nlu.test:Your model made no errors
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+      answer       1.00      1.00      1.00         4
+    category       1.00      1.00      1.00        77
+   no_entity       1.00      1.00      1.00       198
+
+   micro avg       1.00      1.00      1.00       279
+   macro avg       1.00      1.00      1.00       279
+weighted avg       1.00      1.00      1.00       279
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 78 (7 distinct intents)
+	- Found intents: 'fine_normal', 'news', 'greet', 'bye', 'Test', 'thanks', 'fine_ask'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en_core_web_md'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syam/000work/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 78 (7 distinct intents)
+	- Found intents: 'fine_normal', 'news', 'greet', 'bye', 'Test', 'thanks', 'fine_ask'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 78 examples that have a defined intent out of 78 examples
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+        Test       1.00      1.00      1.00         4
+         bye       1.00      1.00      1.00         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       greet       1.00      1.00      1.00         9
+        news       1.00      1.00      1.00        47
+      thanks       1.00      1.00      1.00         5
+
+   micro avg       1.00      1.00      1.00        78
+   macro avg       1.00      1.00      1.00        78
+weighted avg       1.00      1.00      1.00        78
+
+INFO:rasa_nlu.test:Your model made no errors
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        77
+   no_entity       1.00      1.00      1.00       202
+
+   micro avg       1.00      1.00      1.00       279
+   macro avg       1.00      1.00      1.00       279
+weighted avg       1.00      1.00      1.00       279
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 78 (7 distinct intents)
+	- Found intents: 'fine_ask', 'fine_normal', 'news', 'bye', 'greet', 'thanks', 'Test'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en_core_web_md'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 83 (8 distinct intents)
+	- Found intents: 'fruit', 'fine_normal', 'bye', 'fine_ask', 'greet', 'thanks', 'news', 'Test'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en_core_web_md'
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 83 (8 distinct intents)
+	- Found intents: 'fruit', 'thanks', 'news', 'bye', 'fine_normal', 'fine_ask', 'greet', 'Test'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en_core_web_md'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syamj/SURGE/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 83 (8 distinct intents)
+	- Found intents: 'fruit', 'thanks', 'news', 'bye', 'fine_normal', 'fine_ask', 'greet', 'Test'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 83 examples that have a defined intent out of 83 examples
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+        Test       1.00      1.00      1.00         4
+         bye       1.00      1.00      1.00         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       fruit       1.00      1.00      1.00         5
+       greet       1.00      1.00      1.00         9
+        news       1.00      1.00      1.00        47
+      thanks       1.00      1.00      1.00         5
+
+   micro avg       1.00      1.00      1.00        83
+   macro avg       1.00      1.00      1.00        83
+weighted avg       1.00      1.00      1.00        83
+
+INFO:rasa_nlu.test:Your model made no errors
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        77
+   no_entity       1.00      1.00      1.00       207
+
+   micro avg       1.00      1.00      1.00       284
+   macro avg       1.00      1.00      1.00       284
+weighted avg       1.00      1.00      1.00       284
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 83 (8 distinct intents)
+	- Found intents: 'thanks', 'fruit', 'bye', 'greet', 'Test', 'fine_ask', 'news', 'fine_normal'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en_core_web_md'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syamj/SURGE/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 83 (8 distinct intents)
+	- Found intents: 'thanks', 'fruit', 'bye', 'greet', 'Test', 'fine_ask', 'news', 'fine_normal'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 83 examples that have a defined intent out of 83 examples
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+        Test       1.00      1.00      1.00         4
+         bye       1.00      1.00      1.00         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       fruit       1.00      1.00      1.00         5
+       greet       1.00      1.00      1.00         9
+        news       1.00      1.00      1.00        47
+      thanks       1.00      1.00      1.00         5
+
+   micro avg       1.00      1.00      1.00        83
+   macro avg       1.00      1.00      1.00        83
+weighted avg       1.00      1.00      1.00        83
+
+INFO:rasa_nlu.test:Your model made no errors
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        77
+   no_entity       1.00      1.00      1.00       207
+
+   micro avg       1.00      1.00      1.00       284
+   macro avg       1.00      1.00      1.00       284
+weighted avg       1.00      1.00      1.00       284
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 83 (8 distinct intents)
+	- Found intents: 'news', 'fruit', 'bye', 'greet', 'thanks', 'fine_normal', 'fine_ask', 'Test'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en_core_web_md'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syamj/SURGE/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 83 (8 distinct intents)
+	- Found intents: 'news', 'fruit', 'bye', 'greet', 'thanks', 'fine_normal', 'fine_ask', 'Test'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 83 examples that have a defined intent out of 83 examples
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+        Test       1.00      1.00      1.00         4
+         bye       1.00      1.00      1.00         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       fruit       1.00      1.00      1.00         5
+       greet       1.00      1.00      1.00         9
+        news       1.00      1.00      1.00        47
+      thanks       1.00      1.00      1.00         5
+
+   micro avg       1.00      1.00      1.00        83
+   macro avg       1.00      1.00      1.00        83
+weighted avg       1.00      1.00      1.00        83
+
+INFO:rasa_nlu.test:Your model made no errors
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        77
+   no_entity       1.00      1.00      1.00       207
+
+   micro avg       1.00      1.00      1.00       284
+   macro avg       1.00      1.00      1.00       284
+weighted avg       1.00      1.00      1.00       284
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 83 (8 distinct intents)
+	- Found intents: 'greet', 'thanks', 'fruit', 'Test', 'bye', 'news', 'fine_ask', 'fine_normal'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.utils.spacy_utils:Trying to load spacy model with name 'en_core_web_md'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+DEBUG:rasa_nlu.training_data.training_data:Validating training data...
+INFO:rasa_nlu.model:Starting to train component SpacyNLP
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyTokenizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SpacyFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component RegexFeaturizer
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component CRFEntityExtractor
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component EntitySynonymMapper
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Starting to train component SklearnIntentClassifier
+INFO:rasa_nlu.model:Finished training component.
+INFO:rasa_nlu.model:Successfully saved model into '/home/syamj/SURGE/convaienv/wall-e/models/current/nlu'
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.
+INFO:rasa_nlu.training_data.loading:Training data format of ./data/nlu.md is md
+INFO:rasa_nlu.training_data.training_data:Training data stats: 
+	- intent examples: 83 (8 distinct intents)
+	- Found intents: 'greet', 'thanks', 'fruit', 'Test', 'bye', 'news', 'fine_ask', 'fine_normal'
+	- entity examples: 47 (1 distinct entities)
+	- found entities: 'category'
+
+INFO:rasa_nlu.test:Running model for predictions:
+INFO:rasa_nlu.test:Intent evaluation results:
+INFO:rasa_nlu.test:Intent Evaluation: Only considering those 83 examples that have a defined intent out of 83 examples
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+        Test       1.00      1.00      1.00         4
+         bye       1.00      1.00      1.00         6
+    fine_ask       1.00      1.00      1.00         3
+ fine_normal       1.00      1.00      1.00         4
+       fruit       1.00      1.00      1.00         5
+       greet       1.00      1.00      1.00         9
+        news       1.00      1.00      1.00        47
+      thanks       1.00      1.00      1.00         5
+
+   micro avg       1.00      1.00      1.00        83
+   macro avg       1.00      1.00      1.00        83
+weighted avg       1.00      1.00      1.00        83
+
+INFO:rasa_nlu.test:Your model made no errors
+INFO:rasa_nlu.test:Entity evaluation results:
+INFO:rasa_nlu.test:Evaluation for entity extractor: CRFEntityExtractor 
+INFO:rasa_nlu.test:F1-Score:  1.0
+INFO:rasa_nlu.test:Precision: 1.0
+INFO:rasa_nlu.test:Accuracy:  1.0
+INFO:rasa_nlu.test:Classification report: 
+              precision    recall  f1-score   support
+
+    category       1.00      1.00      1.00        77
+   no_entity       1.00      1.00      1.00       207
+
+   micro avg       1.00      1.00      1.00       284
+   macro avg       1.00      1.00      1.00       284
+weighted avg       1.00      1.00      1.00       284
+
+INFO:rasa_nlu.components:Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en_core_web_md'.

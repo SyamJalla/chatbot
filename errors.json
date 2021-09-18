@@ -1,0 +1,18 @@
+[
+    {
+        "text": "Test me",
+        "intent": "Test",
+        "intent_prediction": {
+            "name": "greet",
+            "confidence": 0.20684838167867095
+        }
+    },
+    {
+        "text": "Can you test me",
+        "intent": "Test",
+        "intent_prediction": {
+            "name": "bye",
+            "confidence": 0.22793700985085724
+        }
+    }
+]
